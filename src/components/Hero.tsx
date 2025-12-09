@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import banner1 from '../assets/imgs/banner1.jpg';
 
 export default function Hero() {
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -12,9 +13,10 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#233259] via-[#2e62e7] to-[#233259] pt-20"
+      className="relative min-h-screen flex items-center justify-center pt-20 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${banner1})` }}
     >
-      <div className="absolute inset-0 bg-black opacity-10"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
