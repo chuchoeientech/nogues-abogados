@@ -7,16 +7,7 @@ export default function Footer() {
     <footer className="bg-[#233259] text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Scale size={32} />
-              <span className="text-2xl font-bold">NOGUES ABOGADOS</span>
-            </div>
-            <p className="text-white/80">
-              Soluciones legales estratégicas con enfoque en la excelencia
-              y la innovación.
-            </p>
-          </div>
+          
 
           <div>
             <h4 className="text-lg font-bold mb-4">Enlaces Rápidos</h4>

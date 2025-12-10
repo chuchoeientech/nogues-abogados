@@ -86,14 +86,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="font-semibold text-[#233259] mb-4">Horario de Atención</h4>
-              <div className="space-y-2 text-[#222525]">
-                <p>Lunes a Viernes: 8:00 - 18:00</p>
-                <p>Sábado: 9:00 - 13:00</p>
-                <p>Domingo: Cerrado</p>
-              </div>
-            </div>
+           
 
             <div className="mt-6">
               <h4 className="font-semibold text-[#233259] mb-4">Síguenos</h4>
@@ -211,7 +204,7 @@ export default function ContactSection() {
         <div className="mt-12 rounded-lg overflow-hidden shadow-md h-96">
           <iframe
             title="Ubicación NOGUES ABOGADOS"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.6891684586887!2d-57.62!3d-25.28!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE2JzQ4LjAiUyA1N8KwMzcnMTIuMCJX!5e0!3m2!1ses!2spy!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.594781387856!2d-57.613999800595465!3d-25.284962579777915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da7004fb8377d%3A0xf06860e1d319f147!2sNOGUES%20abogados!5e0!3m2!1ses!2spy!4v1765398383413!5m2!1ses!2spy"
             width="100%"
             height="100%"
             style={{ border: 0 }}

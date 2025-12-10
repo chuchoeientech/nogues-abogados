@@ -6,37 +6,78 @@ export default function ServicesSection() {
       icon: Building2,
       title: 'Derecho Corporativo',
       description:
-        'Asesoramiento integral en constitución, fusiones, adquisiciones y gobierno corporativo para empresas de todos los tamaños.',
+        ' asesoramiento integral en materia corporativa y societaria, constitución de empresas, acompañamiento en inversiones, gobierno corporativo y representación legal.',
     },
     {
       icon: Scale,
-      title: 'Litigios y Arbitraje',
+      title: 'Litigios',
       description:
-        'Representación especializada en procesos judiciales y arbitrales, con estrategias efectivas para la resolución de conflictos.',
+        'representación judicial con transparencia y confiabilidad en procesos civiles, comerciales, contenciosos-administrativos y penales.',
     },
     {
       icon: Users,
-      title: 'Derecho Laboral',
+      title: 'Contrataciones Públicas',
       description:
-        'Soluciones en relaciones laborales, contratos, despidos, negociaciones colectivas y cumplimiento normativo.',
+        'NOGUES cuenta con profesionales especializados en el área y ofrece un acompañamiento integral en procesos licitatorios, desde el análisis de bases hasta la presentación de ofertas, seguimiento del contrato administrativo y solución de controversias.',
     },
     {
       icon: FileText,
       title: 'Contratos y Obligaciones',
       description:
-        'Redacción, revisión y negociación de contratos comerciales, civiles y acuerdos empresariales complejos.',
+        'Redacción, revisión y negociación de contratos comerciales, civiles y acuerdos empresariales.',
     },
     {
       icon: Briefcase,
-      title: 'Derecho Comercial',
+      title: 'Derecho de familia',
       description:
-        'Consultoría en operaciones comerciales, planificación estratégica y cumplimiento de regulaciones comerciales.',
+        'Asistencia jurídica en sucesiones, divorcios, disoluciones conyugales, acuerdos familiares y mediación, representación en procesos de violencia familiar o contra la mujer con enfoque humano y reservado.',
     },
     {
       icon: Shield,
-      title: 'Compliance Legal',
+      title: 'Propiedad intelectual',
       description:
-        'Implementación de programas de cumplimiento normativo y prevención de riesgos legales para su organización.',
+        'Asesoramiento en la protección y gestión de activos intangibles de autor, con especial énfasis en el registro, defensa y vigilancia de marcas y otros signos distintivos.',
+    },
+    {
+      icon: Building2,
+      title: 'Compliance y Derecho Regulatorio',
+      description:
+        'Diseño e implementación de programas de cumplimiento normativo, gestión de riesgos y acompañamiento frente a entes reguladores, asegurando que la empresa opere dentro del marco legal vigente.',
+    },
+    {
+      icon: Scale,
+      title: 'Derecho de la Competencia',
+      description:
+        'Asesoramiento en prácticas comerciales leales, control de concentraciones económicas, análisis de conductas anticompetitivas y defensa en procedimientos administrativos ante CONACOM.',
+    },
+    {
+      icon: Users,
+      title: 'Derecho Deportivo',
+      description:
+        'Acompañamiento jurídico a clubes, deportistas y entidades deportivas en materia de societaria, administrativa, de contratos, transferencias, reglamentos y cumplimiento normativo en el ámbito deportivo.',
+    },
+    {
+      icon: FileText,
+      title: 'Derecho de trabajo',
+      description:
+        'Asesoramiento laboral preventivo para empresas, elaboración de políticas internas, revisión de contratos y cumplimiento de obligaciones.',
+    },
+    {
+      icon: Briefcase,
+      title: 'Tecnologia y Datos',
+      description:
+        'Asesoría en protección de datos personales, ciberseguridad, contratos tecnológicos, plataformas digitales y cumplimiento de normativas aplicables a tratamiento de información.',
+    },{
+      icon: Shield,
+      title: 'Derecho Migratorio',
+      description:
+        'Asistencia en radicaciones, residencias, juicios de naturalización u opción de nacionalidad.',
+    },
+    {
+      icon: FileText,
+      title: 'Juegos de Azar',
+      description:
+        'Asesoramiento integral a empresas operadoras y proveedores del sector, cumplimiento ante CONAJZAR, licencias, habilitaciones, regulaciones, contratos y auditorías legales.',
     },
   ];
 
