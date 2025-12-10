@@ -3,24 +3,24 @@ import { User, Linkedin } from 'lucide-react';
 export default function TeamSection() {
   const team = [
     {
-      name: 'Dr. Juan Nogués',
-      position: 'Socio Fundador',
-      specialization: 'Derecho Corporativo y Comercial',
+      name: 'Abg. Carolina Nogues',
+      position: 'Socia Fundador',
+      linkedin: 'https://www.linkedin.com/in/carolina-nogues-07b240239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', 
     },
     {
-      name: 'Dra. María González',
-      position: 'Socia',
-      specialization: 'Litigios y Arbitraje',
-    },
-    {
-      name: 'Dr. Carlos Benítez',
+      name: 'Abg. Camilo Torres Nogues',
       position: 'Socio',
-      specialization: 'Derecho Laboral',
+      linkedin: 'https://www.linkedin.com/in/camilotorresn?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
-      name: 'Dra. Ana Martínez',
-      position: 'Asociada Senior',
-      specialization: 'Compliance y Regulatorio',
+      name: 'Abg. Fabrizio Amarilla Duré',
+      position: 'Of Counsel',
+      linkedin: 'https://www.linkedin.com/in/fabrizio-amarilla-5a56b9255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    },
+    {
+      name: 'Lic. Carlos A. Torres',
+      position: 'Administración',
+      linkedin: 'https://www.linkedin.com/in/carlos-a-torres',
     },
   ];
 
@@ -54,12 +54,16 @@ export default function TeamSection() {
                 <p className="text-[#2e62e7] font-semibold mb-2">
                   {member.position}
                 </p>
-                <p className="text-[#222525] text-sm mb-4">
-                  {member.specialization}
-                </p>
-                <button className="text-[#2e62e7] hover:text-[#233259] transition-colors">
+
+                {/* Link de LinkedIn */}
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#2e62e7] hover:text-[#233259] transition-colors inline-flex"
+                >
                   <Linkedin size={24} />
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -70,27 +74,24 @@ export default function TeamSection() {
             <h3 className="text-2xl font-bold text-[#233259] mb-4">
               ¿Por qué elegirnos?
             </h3>
-            <p className="text-[#222525] leading-relaxed mb-6">
-              Nuestro equipo combina experiencia práctica, conocimiento profundo
-              del marco legal y un enfoque personalizado para cada cliente. Trabajamos
-              con pasión y dedicación para lograr los mejores resultados en cada caso.
-            </p>
+          
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">15+</div>
+                <div className="text-4xl font-bold text-[#2e62e7] mb-2">10+</div>
                 <div className="text-[#222525]">Años de Experiencia</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">500+</div>
-                <div className="text-[#222525]">Casos Exitosos</div>
+                <div className="text-4xl font-bold text-[#2e62e7] mb-2">10+</div>
+                <div className="text-[#222525]">Países en alcance internacional</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">98%</div>
-                <div className="text-[#222525]">Satisfacción del Cliente</div>
+                <div className="text-4xl font-bold text-[#2e62e7] mb-2">15+</div>
+                <div className="text-[#222525]">Areas de práctica alcanzadas</div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

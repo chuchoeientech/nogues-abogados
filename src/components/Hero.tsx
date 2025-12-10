@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import banner1 from '../assets/imgs/banner1.jpg';
+import banner1 from '../assets/imgs/banner1.jpeg';
 
 export default function Hero() {
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -25,21 +25,8 @@ export default function Hero() {
           <span className="text-[#f7f5f2]">con Excelencia</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-          Asesoría jurídica estratégica con enfoque en la innovación,
-          dedicada a proteger sus intereses con profesionalismo y compromiso
-        </p>
-
+      
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href="#contacto"
-            onClick={handleContactClick}
-            className="bg-white text-[#2e62e7] px-8 py-4 rounded-md font-semibold hover:bg-[#f7f5f2] transition-all duration-300 flex items-center gap-2 shadow-lg"
-          >
-            Consulta Gratuita
-            <ArrowRight size={20} />
-          </a>
-
           <a
             href="#servicios"
             onClick={(e) => {
