@@ -1,11 +1,44 @@
 import { User, Linkedin } from 'lucide-react';
 
+interface TeamMember {
+  name: string;
+  position: string;
+  linkedin: string;
+}
+
+function Card({ member }: { member: TeamMember }) {
+  return (
+    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-[360px] w-72 flex flex-col">
+      <div className="h-40 bg-gradient-to-br from-[#233259] to-[#2e62e7] flex items-center justify-center">
+        <User className="text-white" size={70} strokeWidth={1.5} />
+      </div>
+
+      <div className="p-6 flex flex-col justify-between flex-grow">
+        <div>
+          <h3 className="text-xl font-bold text-[#233259] mb-2">{member.name}</h3>
+          <p className="text-[#2e62e7] font-semibold">{member.position}</p>
+        </div>
+
+        <a
+          href={member.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#2e62e7] hover:text-[#233259] transition-colors inline-flex mt-4"
+        >
+          <Linkedin size={24} />
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default function TeamSection() {
   const team = [
     {
       name: 'Abg. Carolina Nogues',
       position: 'Socia Fundador',
-      linkedin: 'https://www.linkedin.com/in/carolina-nogues-07b240239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', 
+      linkedin:
+        'https://www.linkedin.com/in/carolina-nogues-07b240239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
       name: 'Abg. Camilo Torres Nogues',
@@ -15,7 +48,13 @@ export default function TeamSection() {
     {
       name: 'Abg. Fabrizio Amarilla Duré',
       position: 'Of Counsel',
-      linkedin: 'https://www.linkedin.com/in/fabrizio-amarilla-5a56b9255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      linkedin:
+        'https://www.linkedin.com/in/fabrizio-amarilla-5a56b9255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    },
+    {
+      name: 'Abg. Liz Ma. Patricia Villagra',
+      position: 'Of Counsel | CDE',
+      linkedin: 'https://www.linkedin.com/in/carlos-a-torres',
     },
     {
       name: 'Lic. Carlos A. Torres',
@@ -27,6 +66,8 @@ export default function TeamSection() {
   return (
     <section id="equipo" className="py-20 bg-[#f7f5f2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#233259] mb-4">
             Nuestro Equipo
@@ -38,43 +79,27 @@ export default function TeamSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {team.map((member, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="aspect-square bg-gradient-to-br from-[#233259] to-[#2e62e7] flex items-center justify-center">
-                <User className="text-white" size={80} strokeWidth={1.5} />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#233259] mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-[#2e62e7] font-semibold mb-2">
-                  {member.position}
-                </p>
-
-                {/* Link de LinkedIn */}
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#2e62e7] hover:text-[#233259] transition-colors inline-flex"
-                >
-                  <Linkedin size={24} />
-                </a>
-              </div>
-            </div>
+       
+        <div className="flex justify-center gap-10 mb-12 ">
+          {[team[0], team[1]].map((member, i) => (
+            <Card key={i} member={member} />
           ))}
         </div>
 
+       
+        <div className="flex justify-center gap-8 flex-wrap">
+          {[team[2], team[3], team[4]].map((member, i) => (
+            <Card key={i} member={member} />
+          ))}
+        </div>
+
+       
         <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-bold text-[#233259] mb-4">
               ¿Por qué elegirnos?
             </h3>
-          
+
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div>
                 <div className="text-4xl font-bold text-[#2e62e7] mb-2">10+</div>
