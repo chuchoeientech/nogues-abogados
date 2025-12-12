@@ -100,7 +100,9 @@ export default function ContactSection() {
                   <Instagram className="text-white" size={24} />
                 </a>
                 <a
-                  href="#"
+                  href="http://linkedin.com/company/nogues-abogados"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-[#2e62e7] rounded-lg flex items-center justify-center hover:bg-[#233259] transition-colors"
                 >
                   <Linkedin className="text-white" size={24} />

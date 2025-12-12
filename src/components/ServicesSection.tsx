@@ -6,13 +6,13 @@ export default function ServicesSection() {
       icon: Building2,
       title: 'Derecho Corporativo',
       description:
-        ' asesoramiento integral en materia corporativa y societaria, constitución de empresas, acompañamiento en inversiones, gobierno corporativo y representación legal.',
+        ' Asesoramiento integral en materia corporativa y societaria, constitución de empresas, acompañamiento en inversiones, gobierno corporativo y representación legal.',
     },
     {
       icon: Scale,
-      title: 'Litigios',
+      title: 'Litigios y Resolución de Conflictos',
       description:
-        'representación judicial con transparencia y confiabilidad en procesos civiles, comerciales, contenciosos-administrativos y penales.',
+        'Representación judicial con transparencia y confiabilidad en procesos civiles, comerciales, contenciosos-administrativos y penales.',
     },
     {
       icon: Users,
@@ -28,7 +28,7 @@ export default function ServicesSection() {
     },
     {
       icon: Briefcase,
-      title: 'Derecho de familia',
+      title: 'Derecho de Familia',
       description:
         'Asistencia jurídica en sucesiones, divorcios, disoluciones conyugales, acuerdos familiares y mediación, representación en procesos de violencia familiar o contra la mujer con enfoque humano y reservado.',
     },
@@ -64,7 +64,7 @@ export default function ServicesSection() {
     },
     {
       icon: Briefcase,
-      title: 'Tecnologia y Datos',
+      title: 'Tecnología y Datos',
       description:
         'Asesoría en protección de datos personales, ciberseguridad, contratos tecnológicos, plataformas digitales y cumplimiento de normativas aplicables a tratamiento de información.',
     },{
@@ -78,6 +78,18 @@ export default function ServicesSection() {
       title: 'Juegos de Azar',
       description:
         'Asesoramiento integral a empresas operadoras y proveedores del sector, cumplimiento ante CONAJZAR, licencias, habilitaciones, regulaciones, contratos y auditorías legales.',
+    },
+    {
+      icon: Briefcase,
+      title: 'Derecho Administrativo',
+      description:
+        'Asesoramiento y representación en procedimientos administrativos frente a entes gubernamentales y representación judicial en acciones contencioso-administrativas (Tribunal de Cuentas).',
+    },
+    {
+      icon: Users,
+      title: 'Defensa al Consumidor',
+      description:
+        'Asistencia en conflictos entre proveedores y consumidores, cumplimiento de normativas de protección al consumidor y representación en procedimientos ante SEDECO. Desde NOGUES buscamos soluciones efectivas orientadas a minimizar riesgos legales y reputacionales.',
     },
   ];
 
