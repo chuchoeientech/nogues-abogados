@@ -1,4 +1,4 @@
-import logo from '../assets/logo/logo.png';
+import logo from '../assets/logo/logo2.png';
 import { Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
 
           {/* LOGO */}
-          <div className="flex justify-center bg-white rounded  h-32 rounded p-14">
+          <div className="flex justify-center   h-32 rounded p-14">
             <a
               href="#inicio"
               onClick={(e) => scrollTo(e, '#inicio')}
@@ -46,6 +46,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="tel:+595986654507" className="text-white/80 hover:text-white transition-colors">Tel: +595 986654507</a></li>
               <li><a href="mailto:info@nogues.com.py" className="text-white/80 hover:text-white transition-colors">info@nogues.com.py</a></li>
+              <li>Asuncion, Paraguay</li>
               <li className="flex space-x-4 justify-center">
                 <a href="https://instagram.com/nogues.py" target="_blank" className="text-white/80 hover:text-white transition-colors"><Instagram size={24} /></a>
                 <a href="https://linkedin.com/company/nogues-abogados" target="_blank" className="text-white/80 hover:text-white transition-colors"><Linkedin size={24} /></a>

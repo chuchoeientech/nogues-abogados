@@ -1,9 +1,10 @@
-import { User, Linkedin } from 'lucide-react';
+import { User, Linkedin, Mail } from 'lucide-react';
 
 interface TeamMember {
   name: string;
   position: string;
   linkedin: string;
+  email: string;
 }
 
 function Card({ member }: { member: TeamMember }) {
@@ -15,8 +16,22 @@ function Card({ member }: { member: TeamMember }) {
 
       <div className="p-6 flex flex-col justify-between flex-grow">
         <div>
-          <h3 className="text-xl font-bold text-[#233259] mb-2">{member.name}</h3>
-          <p className="text-[#2e62e7] font-semibold">{member.position}</p>
+          <h3 className="text-xl font-bold text-[#233259] mb-1">
+            {member.name}
+          </h3>
+
+          <p className="text-[#2e62e7] font-semibold">
+            {member.position}
+          </p>
+
+          {/* EMAIL */}
+          <a
+            href={`mailto:${member.email}`}
+            className="mt-2 flex items-center gap-2 text-sm text-[#222525] hover:text-[#2e62e7] transition-colors break-all"
+          >
+            <Mail size={16} />
+            {member.email}
+          </a>
         </div>
 
         <a
@@ -33,32 +48,38 @@ function Card({ member }: { member: TeamMember }) {
 }
 
 export default function TeamSection() {
-  const team = [
+  const team: TeamMember[] = [
     {
       name: 'Abg. Carolina Nogues',
-      position: 'Socia Fundador',
+      position: 'Socia Fundadora',
+      email: 'carolina@nogues.com.py',
       linkedin:
         'https://www.linkedin.com/in/carolina-nogues-07b240239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
       name: 'Abg. Camilo Torres Nogues',
       position: 'Socio',
-      linkedin: 'https://www.linkedin.com/in/camilotorresn?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      email: 'ctorres@nogues.com.py',
+      linkedin:
+        'https://www.linkedin.com/in/camilotorresn?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
       name: 'Abg. Fabrizio Amarilla Duré',
       position: 'Of Counsel',
+      email: 'famarilla@nogues.com.py',
       linkedin:
         'https://www.linkedin.com/in/fabrizio-amarilla-5a56b9255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
       name: 'Abg. Liz Ma. Patricia Villagra',
       position: 'Of Counsel | CDE',
+      email: 'lvillagra@nogues.com.py',
       linkedin: 'https://www.linkedin.com/in/carlos-a-torres',
     },
     {
       name: 'Lic. Carlos A. Torres',
       position: 'Administración',
+      email: '',
       linkedin: 'https://www.linkedin.com/in/carlos-a-torres',
     },
   ];
@@ -66,8 +87,6 @@ export default function TeamSection() {
   return (
     <section id="equipo" className="py-20 bg-[#f7f5f2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#233259] mb-4">
             Nuestro Equipo
@@ -79,21 +98,21 @@ export default function TeamSection() {
           </p>
         </div>
 
-       
-        <div className="flex justify-center gap-10 mb-12 ">
+        {/* PRIMERA FILA */}
+        <div className="flex justify-center gap-10 mb-12">
           {[team[0], team[1]].map((member, i) => (
             <Card key={i} member={member} />
           ))}
         </div>
 
-       
+        {/* SEGUNDA FILA */}
         <div className="flex justify-center gap-8 flex-wrap">
           {[team[2], team[3], team[4]].map((member, i) => (
             <Card key={i} member={member} />
           ))}
         </div>
 
-       
+        {/* BLOQUE FINAL */}
         <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-bold text-[#233259] mb-4">
@@ -102,21 +121,30 @@ export default function TeamSection() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">10+</div>
+                <div className="text-4xl font-bold text-[#2e62e7] mb-2">
+                  10+
+                </div>
                 <div className="text-[#222525]">Años de Experiencia</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">10+</div>
-                <div className="text-[#222525]">Países en alcance internacional</div>
+                <div className="text-4xl font-bold text-[#2e62e7] mb-2">
+                  10+
+                </div>
+                <div className="text-[#222525]">
+                  Países en alcance internacional
+                </div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">15+</div>
-                <div className="text-[#222525]">Areas de práctica alcanzadas</div>
+                <div className="text-4xl font-bold text-[#2e62e7] mb-2">
+                  15+
+                </div>
+                <div className="text-[#222525]">
+                  Áreas de práctica alcanzadas
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

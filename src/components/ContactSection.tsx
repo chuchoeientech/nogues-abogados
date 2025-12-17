@@ -9,13 +9,9 @@ export default function ContactSection() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Gracias por contactarnos. Nos pondremos en contacto pronto.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -37,6 +33,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* INFO */}
           <div>
             <h3 className="text-2xl font-bold text-[#233259] mb-6">
               Información de Contacto
@@ -51,6 +48,9 @@ export default function ContactSection() {
                   <h4 className="font-semibold text-[#233259] mb-1">Dirección</h4>
                   <p className="text-[#222525]">
                     Washington 795 esq. Juan de Salazar
+                  </p>
+                  <p className="text-[#222525]">
+                    Asuncion, Paraguay
                   </p>
                 </div>
               </div>
@@ -86,8 +86,6 @@ export default function ContactSection() {
               </div>
             </div>
 
-           
-
             <div className="mt-6">
               <h4 className="font-semibold text-[#233259] mb-4">Síguenos</h4>
               <div className="flex gap-4">
@@ -111,84 +109,77 @@ export default function ContactSection() {
             </div>
           </div>
 
+          {/* FORMULARIO */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-[#233259] mb-6">
               Envíanos un Mensaje
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+
+            <form
+              action="https://formspree.io/f/xvgeeepz"
+              method="POST"
+              className="space-y-6"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nuevo mensaje desde Nogues Abogados"
+              />
+              <input type="hidden" name="_template" value="table" />
+
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-[#222525] font-medium mb-2"
-                >
+                <label className="block text-[#222525] font-medium mb-2">
                   Nombre Completo
                 </label>
                 <input
                   type="text"
-                  id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2e62e7] focus:border-transparent"
-                  placeholder="Juan Pérez"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-[#222525] font-medium mb-2"
-                >
+                <label className="block text-[#222525] font-medium mb-2">
                   Email
                 </label>
                 <input
                   type="email"
-                  id="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2e62e7] focus:border-transparent"
-                  placeholder="juan@ejemplo.com"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="phone"
-                  className="block text-[#222525] font-medium mb-2"
-                >
+                <label className="block text-[#222525] font-medium mb-2">
                   Teléfono
                 </label>
                 <input
                   type="tel"
-                  id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2e62e7] focus:border-transparent"
-                  placeholder="+595 XXX XXXXXX"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-[#222525] font-medium mb-2"
-                >
+                <label className="block text-[#222525] font-medium mb-2">
                   Mensaje
                 </label>
                 <textarea
-                  id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2e62e7] focus:border-transparent resize-none"
-                  placeholder="Cuéntenos sobre su caso..."
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg resize-none"
                 ></textarea>
               </div>
 
@@ -203,6 +194,7 @@ export default function ContactSection() {
           </div>
         </div>
 
+        {/* MAPA */}
         <div className="mt-12 rounded-lg overflow-hidden shadow-md h-96">
           <iframe
             title="Ubicación NOGUES ABOGADOS"
