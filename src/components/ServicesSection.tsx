@@ -34,7 +34,7 @@ export default function ServicesSection() {
     },
     {
       icon: Shield,
-      title: 'Propiedad intelectual',
+      title: 'Propiedad Intelectual',
       description:
         'Asesoramiento en la protección y gestión de activos intangibles de autor, con especial énfasis en el registro, defensa y vigilancia de marcas y otros signos distintivos.',
     },
@@ -58,7 +58,7 @@ export default function ServicesSection() {
     },
     {
       icon: FileText,
-      title: 'Derecho de trabajo',
+      title: 'Derecho Laboral',
       description:
         'Asesoramiento laboral preventivo para empresas, elaboración de políticas internas, revisión de contratos y cumplimiento de obligaciones.',
     },

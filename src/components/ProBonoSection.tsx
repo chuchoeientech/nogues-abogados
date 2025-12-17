@@ -27,7 +27,7 @@ export default function ProBonoSection() {
           En los últimos 3 años NOGUES ha destinado más de 200 horas de asesoría Pro Bono para apoyar a comunidades vulnerables a través de la Fundación Con Una Sonrisa Paraguay.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 max-w-4xl mx-auto">
             <div>
               <div className="text-4xl font-bold mb-2">200+</div>
               <div className="text-white/90">Horas Pro Bono</div>
@@ -36,10 +36,7 @@ export default function ProBonoSection() {
               <div className="text-4xl font-bold mb-2">100+</div>
               <div className="text-white/90">Familias Asistidas</div>
             </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">10+</div>
-              <div className="text-white/90">ONGs Asesoradas</div>
-            </div>
+            
           </div>
         </div>
       </div>
