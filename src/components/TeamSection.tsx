@@ -112,39 +112,7 @@ export default function TeamSection() {
           ))}
         </div>
 
-        {/* BLOQUE FINAL */}
-        <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-[#233259] mb-4">
-              ¿Por qué elegirnos?
-            </h3>
-
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">
-                  10+
-                </div>
-                <div className="text-[#222525]">Años de Experiencia</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">
-                  10+
-                </div>
-                <div className="text-[#222525]">
-                  Países en alcance internacional
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-[#2e62e7] mb-2">
-                  15+
-                </div>
-                <div className="text-[#222525]">
-                  Áreas de práctica alcanzadas
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
