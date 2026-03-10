@@ -4,92 +4,127 @@ export default function ServicesSection() {
   const services = [
     {
       icon: Building2,
-      title: 'Derecho Corporativo',
+      title: 'Derecho Comercial',
       description:
-        ' Asesoramiento integral en materia corporativa y societaria, constitución de empresas, acompañamiento en inversiones, gobierno corporativo y representación legal.',
+        ' Asesoramiento integral en materia comercial, constitución de empresas, acompañamiento en inversiones, gobierno corporativo y representación legal.',
     },
     {
       icon: Scale,
-      title: 'Litigios y Resolución de Conflictos',
+      title: 'Derecho Penal',
       description:
-        'Representación judicial con transparencia y confiabilidad en procesos civiles, comerciales, contenciosos-administrativos y penales.',
+        'Asesoramiento y representación en procesos penales, defensa en juicios, tramitación de amparos y representación en audiencias de apelación.',
     },
     {
       icon: Users,
-      title: 'Contrataciones Públicas',
+      title: 'Derecho Corporativo',
       description:
-        'NOGUES cuenta con profesionales especializados en el área y ofrece un acompañamiento integral en procesos licitatorios, desde el análisis de bases hasta la presentación de ofertas, seguimiento del contrato administrativo y solución de controversias.',
+        'Asesoramiento integral en materia corporativa y societaria, constitución de empresas, acompañamiento en inversiones, gobierno corporativo y representación legal.',
     },
     {
       icon: FileText,
-      title: 'Contratos y Obligaciones',
+      title: 'Derecho Societario',
       description:
         'Redacción, revisión y negociación de contratos comerciales, civiles y acuerdos empresariales.',
     },
     {
       icon: Briefcase,
+      title: 'Contrato y Obligaciones',
+      description:
+        'Redacción, revisión y negociación de contratos comerciales, civiles y acuerdos empresariales.',
+    },
+    {
+      icon: Shield,
+      title: 'Litigios y Resolución de Conflictos',
+      description:
+        'Representación judicial con transparencia y confiabilidad en procesos civiles, comerciales, contenciosos-administrativos y penales.',
+    },
+    {
+      icon: Building2,
       title: 'Derecho de Familia',
       description:
         'Asistencia jurídica en sucesiones, divorcios, disoluciones conyugales, acuerdos familiares y mediación, representación en procesos de violencia familiar o contra la mujer con enfoque humano y reservado.',
     },
     {
-      icon: Shield,
-      title: 'Propiedad Intelectual',
-      description:
-        'Asesoramiento en la protección y gestión de activos intangibles de autor, con especial énfasis en el registro, defensa y vigilancia de marcas y otros signos distintivos.',
-    },
-    {
-      icon: Building2,
-      title: 'Compliance y Derecho Regulatorio',
-      description:
-        'Diseño e implementación de programas de cumplimiento normativo, gestión de riesgos y acompañamiento frente a entes reguladores, asegurando que la empresa opere dentro del marco legal vigente.',
-    },
-    {
       icon: Scale,
-      title: 'Derecho de la Competencia',
+      title: 'Derecho Sucesorio',
       description:
-        'Asesoramiento en prácticas comerciales leales, control de concentraciones económicas, análisis de conductas anticompetitivas y defensa en procedimientos administrativos ante CONACOM.',
+        'Asesoramiento en herencias, testamentos, sucesiones, divorcios, disoluciones conyugales, acuerdos familiares y mediación, representación en procesos de violencia familiar o contra la mujer con enfoque humano y reservado.',
     },
     {
       icon: Users,
-      title: 'Derecho Deportivo',
-      description:
-        'Acompañamiento jurídico a clubes, deportistas y entidades deportivas en materia de societaria, administrativa, de contratos, transferencias, reglamentos y cumplimiento normativo en el ámbito deportivo.',
-    },
-    {
-      icon: FileText,
-      title: 'Derecho Laboral',
+      title: 'Derecho Laboral y Seguridad Social',
       description:
         'Asesoramiento laboral preventivo para empresas, elaboración de políticas internas, revisión de contratos y cumplimiento de obligaciones.',
     },
     {
-      icon: Briefcase,
-      title: 'Tecnología y Datos',
-      description:
-        'Asesoría en protección de datos personales, ciberseguridad, contratos tecnológicos, plataformas digitales y cumplimiento de normativas aplicables a tratamiento de información.',
-    },{
-      icon: Shield,
-      title: 'Derecho Migratorio',
-      description:
-        'Asistencia en radicaciones, residencias, juicios de naturalización u opción de nacionalidad.',
-    },
-    {
       icon: FileText,
-      title: 'Juegos de Azar',
-      description:
-        'Asesoramiento integral a empresas operadoras y proveedores del sector, cumplimiento ante CONAJZAR, licencias, habilitaciones, regulaciones, contratos y auditorías legales.',
-    },
-    {
-      icon: Briefcase,
       title: 'Derecho Administrativo',
       description:
         'Asesoramiento y representación en procedimientos administrativos frente a entes gubernamentales y representación judicial en acciones contencioso-administrativas (Tribunal de Cuentas).',
     },
     {
+      icon: Briefcase,
+      title: 'Derecho Tributario',
+      description:
+        'Asesoría en protección de datos personales, ciberseguridad, contratos tecnológicos, plataformas digitales y cumplimiento de normativas aplicables a tratamiento de información.',
+    },{
+      icon: Shield,
+      title: 'Contrataciones Públicas',
+      description:
+        'Asistencia en procesos licitatorios, desde el análisis de bases hasta la presentación de ofertas, seguimiento del contrato administrativo y solución de controversias.',
+    },
+    {
+      icon: FileText,
+      title: 'Derecho Migratorio',
+      description:
+        'Asesoramiento integral a empresas operadoras y proveedores del sector, cumplimiento ante CONAJZAR, licencias, habilitaciones, regulaciones, contratos y auditorías legales.',
+    },
+    {
+      icon: Briefcase,
+      title: 'Gestion de inversiones',
+      description:
+        'Asesoramiento y representación en procedimientos administrativos frente a entes gubernamentales y representación judicial en acciones contencioso-administrativas (Tribunal de Cuentas).',
+    },
+    {
       icon: Users,
+      title: 'Asistencia y Representacion Legal de extranjeros',
+      description:
+        'Asistencia y representación legal para extranjeros en Paraguay, cumplimiento de normativas migratorias, residencias, trabajo, residencia permanente, residencia indefinida y nacionalidad.',
+    },
+    {
+      icon: FileText,
+      title: 'Compliance y Derecho Regulatorio',
+      description:
+        'Asesoramiento y representación en procedimientos administrativos frente a entes gubernamentales y representación judicial en acciones contencioso-administrativas (Tribunal de Cuentas).',
+    },
+    {
+      icon: Briefcase,
+      title: 'Antitrust o Derecho de la Competencia',
+      description:
+        'Asesoría en protección de datos personales, ciberseguridad, contratos tecnológicos, plataformas digitales y cumplimiento de normativas aplicables a tratamiento de información.',
+    },{
+      icon: Shield,
       title: 'Defensa al Consumidor',
       description:
-        'Asistencia en conflictos entre proveedores y consumidores, cumplimiento de normativas de protección al consumidor y representación en procedimientos ante SEDECO. Desde NOGUES buscamos soluciones efectivas orientadas a minimizar riesgos legales y reputacionales.',
+        'Asistencia en procesos licitatorios, desde el análisis de bases hasta la presentación de ofertas, seguimiento del contrato administrativo y solución de controversias.',
+    },
+    {
+      icon: FileText,
+      title: 'Tecnología y Datos',
+      description:
+        'Asesoramiento integral a empresas operadoras y proveedores del sector, cumplimiento ante CONAJZAR, licencias, habilitaciones, regulaciones, contratos y auditorías legales.',
+    },
+    {
+      icon: Briefcase,
+      title: 'Derecho Bancario',
+      description:
+        'Asesoramiento y representación en procedimientos administrativos frente a entes gubernamentales y representación judicial en acciones contencioso-administrativas (Tribunal de Cuentas).',
+    },
+    {
+      icon: Users,
+      title: 'Derecho Deportivo',
+      description:
+        'Asistencia y representación legal para extranjeros en Paraguay, cumplimiento de normativas migratorias, residencias, trabajo, residencia permanente, residencia indefinida y nacionalidad.',
     },
   ];
 
