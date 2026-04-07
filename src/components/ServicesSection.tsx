@@ -81,7 +81,7 @@ export default function ServicesSection() {
     },
     {
       icon: Briefcase,
-      title: 'Gestion de inversiones',
+      title: 'Gestión de inversiones',
       description:
         'Asesoramiento y representación en procedimientos administrativos frente a entes gubernamentales y representación judicial en acciones contencioso-administrativas (Tribunal de Cuentas).',
     },
@@ -116,7 +116,7 @@ export default function ServicesSection() {
     },
     {
       icon: Briefcase,
-      title: 'Derecho Bancario',
+      title: 'Registro de Marcas',
       description:
         'Asesoramiento y representación en procedimientos administrativos frente a entes gubernamentales y representación judicial en acciones contencioso-administrativas (Tribunal de Cuentas).',
     },
@@ -159,9 +159,7 @@ export default function ServicesSection() {
                 <h3 className="text-xl font-bold text-[#233259] group-hover:text-white mb-4 transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-[#222525] group-hover:text-white/90 leading-relaxed transition-colors duration-300">
-                  {service.description}
-                </p>
+
               </div>
             );
           })}
